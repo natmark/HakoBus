@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */; };
+		F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0631E4D38D1000CD154 /* ViewController.swift */; };
+		F7C2A0671E4D38D1000CD154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A0651E4D38D1000CD154 /* Main.storyboard */; };
+		F7C2A06A1E4D38D1000CD154 /* HakoBus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0681E4D38D1000CD154 /* HakoBus.xcdatamodeld */; };
+		F7C2A06C1E4D38D1000CD154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A06B1E4D38D1000CD154 /* Assets.xcassets */; };
+		F7C2A06F1E4D38D1000CD154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A06D1E4D38D1000CD154 /* LaunchScreen.storyboard */; };
+		F7C2A07A1E4D38D1000CD154 /* HakoBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0791E4D38D1000CD154 /* HakoBusTests.swift */; };
+		F7C2A0851E4D38D1000CD154 /* HakoBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0841E4D38D1000CD154 /* HakoBusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7C2A0761E4D38D1000CD154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7C2A0561E4D38D0000CD154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7C2A05D1E4D38D0000CD154;
+			remoteInfo = HakoBus;
+		};
+		F7C2A0811E4D38D1000CD154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7C2A0561E4D38D0000CD154 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7C2A05D1E4D38D0000CD154;
+			remoteInfo = HakoBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7C2A05E1E4D38D1000CD154 /* HakoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HakoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7C2A0631E4D38D1000CD154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7C2A0661E4D38D1000CD154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7C2A0691E4D38D1000CD154 /* HakoBus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HakoBus.xcdatamodel; sourceTree = "<group>"; };
+		F7C2A06B1E4D38D1000CD154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7C2A06E1E4D38D1000CD154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7C2A0701E4D38D1000CD154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C2A0751E4D38D1000CD154 /* HakoBusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HakoBusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C2A0791E4D38D1000CD154 /* HakoBusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HakoBusTests.swift; sourceTree = "<group>"; };
+		F7C2A07B1E4D38D1000CD154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C2A0801E4D38D1000CD154 /* HakoBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HakoBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C2A0841E4D38D1000CD154 /* HakoBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HakoBusUITests.swift; sourceTree = "<group>"; };
+		F7C2A0861E4D38D1000CD154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7C2A05B1E4D38D0000CD154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2A0721E4D38D1000CD154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2A07D1E4D38D1000CD154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7C2A0551E4D38D0000CD154 = {
+			isa = PBXGroup;
+			children = (
+				F7C2A0601E4D38D1000CD154 /* HakoBus */,
+				F7C2A0781E4D38D1000CD154 /* HakoBusTests */,
+				F7C2A0831E4D38D1000CD154 /* HakoBusUITests */,
+				F7C2A05F1E4D38D1000CD154 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7C2A05F1E4D38D1000CD154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2A05E1E4D38D1000CD154 /* HakoBus.app */,
+				F7C2A0751E4D38D1000CD154 /* HakoBusTests.xctest */,
+				F7C2A0801E4D38D1000CD154 /* HakoBusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7C2A0601E4D38D1000CD154 /* HakoBus */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */,
+				F7C2A0631E4D38D1000CD154 /* ViewController.swift */,
+				F7C2A0651E4D38D1000CD154 /* Main.storyboard */,
+				F7C2A06B1E4D38D1000CD154 /* Assets.xcassets */,
+				F7C2A06D1E4D38D1000CD154 /* LaunchScreen.storyboard */,
+				F7C2A0701E4D38D1000CD154 /* Info.plist */,
+				F7C2A0681E4D38D1000CD154 /* HakoBus.xcdatamodeld */,
+			);
+			path = HakoBus;
+			sourceTree = "<group>";
+		};
+		F7C2A0781E4D38D1000CD154 /* HakoBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2A0791E4D38D1000CD154 /* HakoBusTests.swift */,
+				F7C2A07B1E4D38D1000CD154 /* Info.plist */,
+			);
+			path = HakoBusTests;
+			sourceTree = "<group>";
+		};
+		F7C2A0831E4D38D1000CD154 /* HakoBusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7C2A0841E4D38D1000CD154 /* HakoBusUITests.swift */,
+				F7C2A0861E4D38D1000CD154 /* Info.plist */,
+			);
+			path = HakoBusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7C2A05D1E4D38D0000CD154 /* HakoBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C2A0891E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBus" */;
+			buildPhases = (
+				F7C2A05A1E4D38D0000CD154 /* Sources */,
+				F7C2A05B1E4D38D0000CD154 /* Frameworks */,
+				F7C2A05C1E4D38D0000CD154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HakoBus;
+			productName = HakoBus;
+			productReference = F7C2A05E1E4D38D1000CD154 /* HakoBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7C2A0741E4D38D1000CD154 /* HakoBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C2A08C1E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBusTests" */;
+			buildPhases = (
+				F7C2A0711E4D38D1000CD154 /* Sources */,
+				F7C2A0721E4D38D1000CD154 /* Frameworks */,
+				F7C2A0731E4D38D1000CD154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7C2A0771E4D38D1000CD154 /* PBXTargetDependency */,
+			);
+			name = HakoBusTests;
+			productName = HakoBusTests;
+			productReference = F7C2A0751E4D38D1000CD154 /* HakoBusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7C2A07F1E4D38D1000CD154 /* HakoBusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7C2A08F1E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBusUITests" */;
+			buildPhases = (
+				F7C2A07C1E4D38D1000CD154 /* Sources */,
+				F7C2A07D1E4D38D1000CD154 /* Frameworks */,
+				F7C2A07E1E4D38D1000CD154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7C2A0821E4D38D1000CD154 /* PBXTargetDependency */,
+			);
+			name = HakoBusUITests;
+			productName = HakoBusUITests;
+			productReference = F7C2A0801E4D38D1000CD154 /* HakoBusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7C2A0561E4D38D0000CD154 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Atsuya Sato";
+				TargetAttributes = {
+					F7C2A05D1E4D38D0000CD154 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DEQGLB9PU4;
+						ProvisioningStyle = Automatic;
+					};
+					F7C2A0741E4D38D1000CD154 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DEQGLB9PU4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F7C2A05D1E4D38D0000CD154;
+					};
+					F7C2A07F1E4D38D1000CD154 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DEQGLB9PU4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F7C2A05D1E4D38D0000CD154;
+					};
+				};
+			};
+			buildConfigurationList = F7C2A0591E4D38D0000CD154 /* Build configuration list for PBXProject "HakoBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7C2A0551E4D38D0000CD154;
+			productRefGroup = F7C2A05F1E4D38D1000CD154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7C2A05D1E4D38D0000CD154 /* HakoBus */,
+				F7C2A0741E4D38D1000CD154 /* HakoBusTests */,
+				F7C2A07F1E4D38D1000CD154 /* HakoBusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7C2A05C1E4D38D0000CD154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C2A06F1E4D38D1000CD154 /* LaunchScreen.storyboard in Resources */,
+				F7C2A06C1E4D38D1000CD154 /* Assets.xcassets in Resources */,
+				F7C2A0671E4D38D1000CD154 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2A0731E4D38D1000CD154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2A07E1E4D38D1000CD154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7C2A05A1E4D38D0000CD154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */,
+				F7C2A06A1E4D38D1000CD154 /* HakoBus.xcdatamodeld in Sources */,
+				F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2A0711E4D38D1000CD154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C2A07A1E4D38D1000CD154 /* HakoBusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C2A07C1E4D38D1000CD154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C2A0851E4D38D1000CD154 /* HakoBusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7C2A0771E4D38D1000CD154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7C2A05D1E4D38D0000CD154 /* HakoBus */;
+			targetProxy = F7C2A0761E4D38D1000CD154 /* PBXContainerItemProxy */;
+		};
+		F7C2A0821E4D38D1000CD154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7C2A05D1E4D38D0000CD154 /* HakoBus */;
+			targetProxy = F7C2A0811E4D38D1000CD154 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7C2A0651E4D38D1000CD154 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C2A0661E4D38D1000CD154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7C2A06D1E4D38D1000CD154 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7C2A06E1E4D38D1000CD154 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7C2A0871E4D38D1000CD154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7C2A0881E4D38D1000CD154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7C2A08A1E4D38D1000CD154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				INFOPLIST_FILE = HakoBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F7C2A08B1E4D38D1000CD154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				INFOPLIST_FILE = HakoBus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F7C2A08D1E4D38D1000CD154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				INFOPLIST_FILE = HakoBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HakoBus.app/HakoBus";
+			};
+			name = Debug;
+		};
+		F7C2A08E1E4D38D1000CD154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				INFOPLIST_FILE = HakoBusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HakoBus.app/HakoBus";
+			};
+			name = Release;
+		};
+		F7C2A0901E4D38D1000CD154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				INFOPLIST_FILE = HakoBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HakoBus;
+			};
+			name = Debug;
+		};
+		F7C2A0911E4D38D1000CD154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				INFOPLIST_FILE = HakoBusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HakoBus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7C2A0591E4D38D0000CD154 /* Build configuration list for PBXProject "HakoBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C2A0871E4D38D1000CD154 /* Debug */,
+				F7C2A0881E4D38D1000CD154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7C2A0891E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C2A08A1E4D38D1000CD154 /* Debug */,
+				F7C2A08B1E4D38D1000CD154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7C2A08C1E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C2A08D1E4D38D1000CD154 /* Debug */,
+				F7C2A08E1E4D38D1000CD154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7C2A08F1E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C2A0901E4D38D1000CD154 /* Debug */,
+				F7C2A0911E4D38D1000CD154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7C2A0681E4D38D1000CD154 /* HakoBus.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7C2A0691E4D38D1000CD154 /* HakoBus.xcdatamodel */,
+			);
+			currentVersion = F7C2A0691E4D38D1000CD154 /* HakoBus.xcdatamodel */;
+			path = HakoBus.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7C2A0561E4D38D0000CD154 /* Project object */;
+}
