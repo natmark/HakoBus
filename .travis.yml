@@ -7,8 +7,8 @@ before_install:
     - carthage update --platform ios
 
 script:
-    - xcodebuild -scheme HakoBus -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 6' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED="NO"
-
+    - xcodebuild -scheme HakoBus -configuration Debug clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED="NO"
+    
 branches:
       only:
         - master
