@@ -7,7 +7,7 @@ before_install:
     - carthage update --platform ios
 
 script:
-    - xcodebuild -scheme HakoBus -configuration Debug clean build test
+    - xcodebuild -scheme HakoBus -configuration Debug clean build test CODE_SIGNING_REQUIRED=NO
 
 branches:
       only:
