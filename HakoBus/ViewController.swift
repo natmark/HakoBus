@@ -8,6 +8,8 @@
 
 import UIKit
 import RxSwift
+import ObjectMapper
+
 class ViewController: UIViewController {
     let disposeBag = DisposeBag()
 
@@ -15,11 +17,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //システムメンテナンスかどうか
         API.Location.isMeintenance().subscribe(onNext: { isMeintenance in
             print (isMeintenance)
         }, onError: nil)
         .addDisposableTo(disposeBag)
+
         
+        var reqParam = Mapper<RouteSearchParameters>().map(JSONString: "{}")
+        reqParam?.origin = 1 //函館バスセンター
+        reqParam?.destination = 2 //松風町
+
+        //直通路線があるかどうか
+        API.Location.isExistRoute(searchParams:reqParam!).subscribe(onNext: { isExistRoute in
+            print (isExistRoute)
+        }, onError: nil)
+            .addDisposableTo(disposeBag)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

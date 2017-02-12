@@ -15,6 +15,8 @@
 		F76E859D1E50759C001D04DB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E859C1E50759C001D04DB /* Alamofire.framework */; };
 		F76E859F1E508687001D04DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E859E1E508687001D04DB /* Location.swift */; };
 		F76E85A11E508996001D04DB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85A01E508996001D04DB /* Router.swift */; };
+		F76E85A41E508F67001D04DB /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85A31E508F67001D04DB /* RequestParameters.swift */; };
+		F76E85A61E509B22001D04DB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E85A51E509B22001D04DB /* ObjectMapper.framework */; };
 		F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */; };
 		F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0631E4D38D1000CD154 /* ViewController.swift */; };
 		F7C2A0671E4D38D1000CD154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A0651E4D38D1000CD154 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		F76E859C1E50759C001D04DB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F76E859E1E508687001D04DB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F76E85A01E508996001D04DB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F76E85A31E508F67001D04DB /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
+		F76E85A51E509B22001D04DB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		F7C2A05E1E4D38D1000CD154 /* HakoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HakoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C2A0631E4D38D1000CD154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76E85A61E509B22001D04DB /* ObjectMapper.framework in Frameworks */,
 				F76E859D1E50759C001D04DB /* Alamofire.framework in Frameworks */,
 				F71D8A101E4F298D000FB21E /* RxAlamofire.framework in Frameworks */,
 				F71D8A111E4F298D000FB21E /* Kanna.framework in Frameworks */,
@@ -100,6 +105,7 @@
 		F71D8A0B1E4F298D000FB21E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F76E85A51E509B22001D04DB /* ObjectMapper.framework */,
 				F76E859C1E50759C001D04DB /* Alamofire.framework */,
 				F71D8A0C1E4F298D000FB21E /* RxAlamofire.framework */,
 				F71D8A0D1E4F298D000FB21E /* Kanna.framework */,
@@ -114,6 +120,7 @@
 			children = (
 				F76E85981E506F4D001D04DB /* API.swift */,
 				F76E85A01E508996001D04DB /* Router.swift */,
+				F76E85A31E508F67001D04DB /* RequestParameters.swift */,
 				F76E859E1E508687001D04DB /* Location.swift */,
 			);
 			name = API;
@@ -318,6 +325,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			outputPaths = (
 			);
@@ -335,6 +343,7 @@
 				F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */,
 				F7C2A06A1E4D38D1000CD154 /* HakoBus.xcdatamodeld in Sources */,
 				F76E859F1E508687001D04DB /* Location.swift in Sources */,
+				F76E85A41E508F67001D04DB /* RequestParameters.swift in Sources */,
 				F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */,
 				F76E85A11E508996001D04DB /* Router.swift in Sources */,
 				F76E85991E506F4D001D04DB /* API.swift in Sources */,

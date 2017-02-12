@@ -15,10 +15,13 @@ extension Router {
     enum Location: URLRequestConvertible {
 
         case isMeintenance()
+        case isExistRoute(RouteSearchParameters)
         
         var method: Alamofire.HTTPMethod {
             switch self {
             case .isMeintenance:
+                return .get
+            case .isExistRoute:
                 return .get
             }
         }
@@ -27,6 +30,8 @@ extension Router {
             switch self {
             case .isMeintenance:
                 return "search01.php"
+            case .isExistRoute(_):
+                return "result.php"
             }
         }
         
@@ -38,6 +43,8 @@ extension Router {
             switch self {
             case .isMeintenance:
                 return try Alamofire.URLEncoding.default.encode(request as URLRequestConvertible, with:[:])
+            case .isExistRoute(let params):
+                return try Alamofire.URLEncoding.default.encode(request as URLRequestConvertible, with:params.APIParams)
             }
         }
     }
@@ -58,7 +65,21 @@ extension API {
                     }
                 }
                 .observeOn(MainScheduler.instance)
-            
+        }
+        /// 2点間を結ぶ路線が存在するかどうかを確認
+        /// - parameter　searchParams: RouteSearchParams
+        /// - returns: 直通する路線があればtrue
+        static func isExistRoute(searchParams:RouteSearchParameters) -> Observable<Bool> {
+            return API.manager.rx.request(urlRequest: Router.Location.isExistRoute(searchParams))
+                .flatMap {
+                    $0
+                        .validate(statusCode: 200 ..< 300)
+                        .rx.responseString()
+                        .flatMap { (res,html) -> Observable<Bool> in
+                            return Observable.just(!html.contains("指定された区間の直通便はありません。"))
+                    }
+                }
+                .observeOn(MainScheduler.instance)
         }
     }
 }
