@@ -1,14 +1,19 @@
 //
-//  HakoBusTests.swift
-//  HakoBusTests
+//  LocationTests.swift
+//  HakoBus
 //
-//  Created by AtsuyaSato on 2017/02/10.
+//  Created by AtsuyaSato on 2017/02/13.
 //  Copyright © 2017年 Atsuya Sato. All rights reserved.
 //
 
 import XCTest
+import RxSwift
+import ObjectMapper
 
-class HakoBusTests: XCTestCase {
+@testable import HakoBus
+
+class LocationTests: XCTestCase {
+    let disposeBag = DisposeBag()
 
     override func setUp() {
         super.setUp()
@@ -23,7 +28,11 @@ class HakoBusTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+        //システムメンテナンスかどうか
+        API.Location.isMeintenance().subscribe(onNext: { isMeintenance in
+            XCTAssertFalse(isMeintenance)
+        }, onError: nil)
+            .addDisposableTo(disposeBag)
     }
     
     func testPerformanceExample() {
