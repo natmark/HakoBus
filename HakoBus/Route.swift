@@ -56,7 +56,7 @@ extension API {
                         .validate(statusCode: 200 ..< 300)
                         .rx.responseString(encoding: String.Encoding.shiftJIS)
                         .flatMap { (res,html) -> Observable<Bool> in
-                            return Observable.just(!html.contains("指定された区間の直通便はありません。"))
+                            return Observable.just(!(html.contains("指定された区間の直通便はありません。") || html.contains("乗車停留所と降車停留所に同じ停留所が選択されています。")))
                     }
                 }
                 .observeOn(MainScheduler.instance)
