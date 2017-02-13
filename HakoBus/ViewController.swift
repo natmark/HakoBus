@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         reqParam?.destination = 2 //松風町
 
         //直通路線があるかどうか
-        API.Location.isExistRoute(searchParams:reqParam!).subscribe(onNext: { isExistRoute in
+        API.Route.isExist(searchParams:reqParam!).subscribe(onNext: { isExistRoute in
             print (isExistRoute)
         }, onError: nil)
             .addDisposableTo(disposeBag)
