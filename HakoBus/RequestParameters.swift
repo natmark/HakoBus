@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-struct RouteSearchParameters: Mappable {
+struct RouteSearchRequestParameters: Mappable {
     var origin:Int = 0
     var destination:Int = 0
     
@@ -20,5 +20,17 @@ struct RouteSearchParameters: Mappable {
     }
     var APIParams: [String: Any] {
         return ["in":origin,"out":destination]
+    }
+}
+
+struct BusStopSearchRequestParameters: Mappable {
+    var name:String = ""
+    
+    init?(map: Map){}
+    mutating func mapping(map: Map) {
+        name <- map["name"]
+    }
+    var APIParams: [String: Any] {
+        return ["stopname_f":name,"stopname_t":""]
     }
 }

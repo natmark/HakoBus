@@ -52,7 +52,7 @@ extension API {
                 .flatMap {
                     $0
                         .validate(statusCode: 200 ..< 300)
-                        .rx.responseString()
+                        .rx.responseString(encoding: String.Encoding.shiftJIS)
                         .flatMap { (res,html) -> Observable<Bool> in
                             return Observable.just(html.contains("只今、システムメンテナンス中のためバス接近情報はご利用できません。"))
                     }

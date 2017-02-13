@@ -24,13 +24,20 @@ class ViewController: UIViewController {
         .addDisposableTo(disposeBag)
 
         
-        var reqParam = Mapper<RouteSearchParameters>().map(JSONString: "{}")
-        reqParam?.origin = 1 //函館バスセンター
-        reqParam?.destination = 2 //松風町
-
+        var routeSearchRequestParameters = Mapper<RouteSearchRequestParameters>().map(JSONString: "{}")
+        routeSearchRequestParameters?.origin = 1 //函館バスセンター
+        routeSearchRequestParameters?.destination = 2 //松風町
         //直通路線があるかどうか
-        API.Route.isExist(searchParams:reqParam!).subscribe(onNext: { isExistRoute in
+        API.Route.isExist(searchParams:routeSearchRequestParameters!).subscribe(onNext: { isExistRoute in
             print (isExistRoute)
+        }, onError: nil)
+            .addDisposableTo(disposeBag)
+        
+        var busStopSearchRequestParameters = Mapper<BusStopSearchRequestParameters>().map(JSONString: "{}")
+        busStopSearchRequestParameters?.name = "函館" //函館バスセンター
+        //バス停名検索
+        API.BusStop.search(searchParams: busStopSearchRequestParameters!).subscribe(onNext: { busstop in
+            print (busstop)
         }, onError: nil)
             .addDisposableTo(disposeBag)
 
