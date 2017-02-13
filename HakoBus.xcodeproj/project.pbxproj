@@ -14,6 +14,11 @@
 		F729CDC51E51912700AF5A5E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDC41E51912700AF5A5E /* Route.swift */; };
 		F729CDC81E519DC200AF5A5E /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0D1E4F298D000FB21E /* Kanna.framework */; };
 		F729CDCA1E51A01D00AF5A5E /* ResultParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDC91E51A01D00AF5A5E /* ResultParameters.swift */; };
+		F729CDCB1E51E30300AF5A5E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E85A51E509B22001D04DB /* ObjectMapper.framework */; };
+		F729CDCC1E51E32100AF5A5E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0F1E4F298D000FB21E /* RxSwift.framework */; };
+		F729CDCE1E51E54100AF5A5E /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDCD1E51E54100AF5A5E /* LocationTests.swift */; };
+		F729CDD01E51E5D100AF5A5E /* BusStopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */; };
+		F729CDD21E51E5DD00AF5A5E /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */; };
 		F76E85991E506F4D001D04DB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85981E506F4D001D04DB /* API.swift */; };
 		F76E859D1E50759C001D04DB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E859C1E50759C001D04DB /* Alamofire.framework */; };
 		F76E859F1E508687001D04DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E859E1E508687001D04DB /* Location.swift */; };
@@ -56,6 +61,9 @@
 		F729CDC41E51912700AF5A5E /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		F729CDC61E51978D00AF5A5E /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = Carthage/Build/iOS/Fuzi.framework; sourceTree = "<group>"; };
 		F729CDC91E51A01D00AF5A5E /* ResultParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultParameters.swift; sourceTree = "<group>"; };
+		F729CDCD1E51E54100AF5A5E /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopTests.swift; sourceTree = "<group>"; };
+		F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
 		F76E85981E506F4D001D04DB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F76E859C1E50759C001D04DB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F76E859E1E508687001D04DB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729CDCC1E51E32100AF5A5E /* RxSwift.framework in Frameworks */,
+				F729CDCB1E51E30300AF5A5E /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				F7C2A0791E4D38D1000CD154 /* HakoBusTests.swift */,
+				F729CDCD1E51E54100AF5A5E /* LocationTests.swift */,
+				F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */,
+				F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */,
 				F7C2A07B1E4D38D1000CD154 /* Info.plist */,
 			);
 			path = HakoBusTests;
@@ -368,6 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729CDCE1E51E54100AF5A5E /* LocationTests.swift in Sources */,
+				F729CDD21E51E5DD00AF5A5E /* RouteTests.swift in Sources */,
+				F729CDD01E51E5D100AF5A5E /* BusStopTests.swift in Sources */,
 				F7C2A07A1E4D38D1000CD154 /* HakoBusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +568,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HakoBusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusTests;
@@ -567,6 +587,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HakoBusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusTests;
