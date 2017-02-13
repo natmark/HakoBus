@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71D8A101E4F298D000FB21E /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0C1E4F298D000FB21E /* RxAlamofire.framework */; };
+		F71D8A121E4F298D000FB21E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0E1E4F298D000FB21E /* RxCocoa.framework */; };
+		F71D8A131E4F298D000FB21E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0F1E4F298D000FB21E /* RxSwift.framework */; };
+		F729CDC31E51911900AF5A5E /* BusStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDC21E51911900AF5A5E /* BusStop.swift */; };
+		F729CDC51E51912700AF5A5E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDC41E51912700AF5A5E /* Route.swift */; };
+		F729CDC81E519DC200AF5A5E /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0D1E4F298D000FB21E /* Kanna.framework */; };
+		F729CDCA1E51A01D00AF5A5E /* ResultParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDC91E51A01D00AF5A5E /* ResultParameters.swift */; };
+		F729CDCB1E51E30300AF5A5E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E85A51E509B22001D04DB /* ObjectMapper.framework */; };
+		F729CDCC1E51E32100AF5A5E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0F1E4F298D000FB21E /* RxSwift.framework */; };
+		F729CDCE1E51E54100AF5A5E /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDCD1E51E54100AF5A5E /* LocationTests.swift */; };
+		F729CDD01E51E5D100AF5A5E /* BusStopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */; };
+		F729CDD21E51E5DD00AF5A5E /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */; };
+		F76E85991E506F4D001D04DB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85981E506F4D001D04DB /* API.swift */; };
+		F76E859D1E50759C001D04DB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E859C1E50759C001D04DB /* Alamofire.framework */; };
+		F76E859F1E508687001D04DB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E859E1E508687001D04DB /* Location.swift */; };
+		F76E85A11E508996001D04DB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85A01E508996001D04DB /* Router.swift */; };
+		F76E85A41E508F67001D04DB /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85A31E508F67001D04DB /* RequestParameters.swift */; };
+		F76E85A61E509B22001D04DB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E85A51E509B22001D04DB /* ObjectMapper.framework */; };
 		F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */; };
 		F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0631E4D38D1000CD154 /* ViewController.swift */; };
 		F7C2A0671E4D38D1000CD154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A0651E4D38D1000CD154 /* Main.storyboard */; };
@@ -35,6 +53,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F71D8A0C1E4F298D000FB21E /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		F71D8A0D1E4F298D000FB21E /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
+		F71D8A0E1E4F298D000FB21E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		F71D8A0F1E4F298D000FB21E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		F729CDC21E51911900AF5A5E /* BusStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStop.swift; sourceTree = "<group>"; };
+		F729CDC41E51912700AF5A5E /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F729CDC61E51978D00AF5A5E /* Fuzi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fuzi.framework; path = Carthage/Build/iOS/Fuzi.framework; sourceTree = "<group>"; };
+		F729CDC91E51A01D00AF5A5E /* ResultParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultParameters.swift; sourceTree = "<group>"; };
+		F729CDCD1E51E54100AF5A5E /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopTests.swift; sourceTree = "<group>"; };
+		F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
+		F76E85981E506F4D001D04DB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F76E859C1E50759C001D04DB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F76E859E1E508687001D04DB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F76E85A01E508996001D04DB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F76E85A31E508F67001D04DB /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
+		F76E85A51E509B22001D04DB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		F7C2A05E1E4D38D1000CD154 /* HakoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HakoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C2A0631E4D38D1000CD154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +91,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729CDC81E519DC200AF5A5E /* Kanna.framework in Frameworks */,
+				F76E85A61E509B22001D04DB /* ObjectMapper.framework in Frameworks */,
+				F76E859D1E50759C001D04DB /* Alamofire.framework in Frameworks */,
+				F71D8A101E4F298D000FB21E /* RxAlamofire.framework in Frameworks */,
+				F71D8A121E4F298D000FB21E /* RxCocoa.framework in Frameworks */,
+				F71D8A131E4F298D000FB21E /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729CDCC1E51E32100AF5A5E /* RxSwift.framework in Frameworks */,
+				F729CDCB1E51E30300AF5A5E /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +119,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71D8A0B1E4F298D000FB21E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F729CDC61E51978D00AF5A5E /* Fuzi.framework */,
+				F76E85A51E509B22001D04DB /* ObjectMapper.framework */,
+				F76E859C1E50759C001D04DB /* Alamofire.framework */,
+				F71D8A0C1E4F298D000FB21E /* RxAlamofire.framework */,
+				F71D8A0D1E4F298D000FB21E /* Kanna.framework */,
+				F71D8A0E1E4F298D000FB21E /* RxCocoa.framework */,
+				F71D8A0F1E4F298D000FB21E /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F76E85A21E508F58001D04DB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F76E85981E506F4D001D04DB /* API.swift */,
+				F76E85A01E508996001D04DB /* Router.swift */,
+				F76E85A31E508F67001D04DB /* RequestParameters.swift */,
+				F729CDC91E51A01D00AF5A5E /* ResultParameters.swift */,
+				F76E859E1E508687001D04DB /* Location.swift */,
+				F729CDC21E51911900AF5A5E /* BusStop.swift */,
+				F729CDC41E51912700AF5A5E /* Route.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		F7C2A0551E4D38D0000CD154 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +154,7 @@
 				F7C2A0781E4D38D1000CD154 /* HakoBusTests */,
 				F7C2A0831E4D38D1000CD154 /* HakoBusUITests */,
 				F7C2A05F1E4D38D1000CD154 /* Products */,
+				F71D8A0B1E4F298D000FB21E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +173,7 @@
 			children = (
 				F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */,
 				F7C2A0631E4D38D1000CD154 /* ViewController.swift */,
+				F76E85A21E508F58001D04DB /* API */,
 				F7C2A0651E4D38D1000CD154 /* Main.storyboard */,
 				F7C2A06B1E4D38D1000CD154 /* Assets.xcassets */,
 				F7C2A06D1E4D38D1000CD154 /* LaunchScreen.storyboard */,
@@ -114,6 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				F7C2A0791E4D38D1000CD154 /* HakoBusTests.swift */,
+				F729CDCD1E51E54100AF5A5E /* LocationTests.swift */,
+				F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */,
+				F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */,
 				F7C2A07B1E4D38D1000CD154 /* Info.plist */,
 			);
 			path = HakoBusTests;
@@ -138,6 +214,7 @@
 				F7C2A05A1E4D38D0000CD154 /* Sources */,
 				F7C2A05B1E4D38D0000CD154 /* Frameworks */,
 				F7C2A05C1E4D38D0000CD154 /* Resources */,
+				F71D8A141E4F29A1000FB21E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,14 +337,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F71D8A141E4F29A1000FB21E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7C2A05A1E4D38D0000CD154 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729CDC51E51912700AF5A5E /* Route.swift in Sources */,
+				F729CDC31E51911900AF5A5E /* BusStop.swift in Sources */,
 				F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */,
 				F7C2A06A1E4D38D1000CD154 /* HakoBus.xcdatamodeld in Sources */,
+				F729CDCA1E51A01D00AF5A5E /* ResultParameters.swift in Sources */,
+				F76E859F1E508687001D04DB /* Location.swift in Sources */,
+				F76E85A41E508F67001D04DB /* RequestParameters.swift in Sources */,
 				F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */,
+				F76E85A11E508996001D04DB /* Router.swift in Sources */,
+				F76E85991E506F4D001D04DB /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F729CDCE1E51E54100AF5A5E /* LocationTests.swift in Sources */,
+				F729CDD21E51E5DD00AF5A5E /* RouteTests.swift in Sources */,
+				F729CDD01E51E5D100AF5A5E /* BusStopTests.swift in Sources */,
 				F7C2A07A1E4D38D1000CD154 /* HakoBusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,10 +527,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = HakoBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -431,10 +547,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = HakoBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -445,6 +568,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HakoBusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusTests;
@@ -460,6 +587,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HakoBusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.HakoBusTests;
@@ -516,6 +647,7 @@
 				F7C2A08B1E4D38D1000CD154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C2A08C1E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBusTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +656,7 @@
 				F7C2A08E1E4D38D1000CD154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C2A08F1E4D38D1000CD154 /* Build configuration list for PBXNativeTarget "HakoBusUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +665,7 @@
 				F7C2A0911E4D38D1000CD154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
