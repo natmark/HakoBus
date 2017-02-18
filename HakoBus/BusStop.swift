@@ -46,10 +46,8 @@ extension Router {
         struct BusStopSearchEncoding: ParameterEncoding {
             func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
                 var request = try! URLEncoding().encode(urlRequest, with: parameters)
-                let urlString = "\((urlRequest.urlRequest?.url?.absoluteString)!)?stopname_f=\((parameters?.first?.value)!)&stopname_t="
-                let encodedString = urlString.addingPercentEscapes(using: String.Encoding.shiftJIS)!
-                
-                request.url = URL(string: encodedString)
+                let urlString = "\((urlRequest.urlRequest?.url?.absoluteString)!)?stopname_f=\(((parameters?.first?.value)! as! String).sjisPercentEncoded)&stopname_t="
+                request.url = URL(string: urlString)
                 return request
             }
         }
