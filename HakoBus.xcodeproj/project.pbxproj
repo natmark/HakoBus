@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F70F7C551E58607B00B691DE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70F7C531E58607B00B691DE /* Quick.framework */; };
+		F70F7C561E58607B00B691DE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70F7C541E58607B00B691DE /* Nimble.framework */; };
 		F718BB821E52AEF400DEC4F0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718BB811E52AEF300DEC4F0 /* Util.swift */; };
 		F71D8A101E4F298D000FB21E /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0C1E4F298D000FB21E /* RxAlamofire.framework */; };
 		F71D8A121E4F298D000FB21E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71D8A0E1E4F298D000FB21E /* RxCocoa.framework */; };
@@ -28,7 +30,6 @@
 		F76E85A61E509B22001D04DB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E85A51E509B22001D04DB /* ObjectMapper.framework */; };
 		F792EB3C1E57F27400210A60 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EB3B1E57F27400210A60 /* Holiday.swift */; };
 		F792EB3E1E57F9AB00210A60 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EB3D1E57F9AB00210A60 /* Date.swift */; };
-		F792EB421E58104600210A60 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792EB411E58104600210A60 /* RxTest.framework */; };
 		F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */; };
 		F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0631E4D38D1000CD154 /* ViewController.swift */; };
 		F7C2A0671E4D38D1000CD154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A0651E4D38D1000CD154 /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F70F7C531E58607B00B691DE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		F70F7C541E58607B00B691DE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		F718BB811E52AEF300DEC4F0 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		F71D8A0C1E4F298D000FB21E /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
 		F71D8A0D1E4F298D000FB21E /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
@@ -112,7 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F792EB421E58104600210A60 /* RxTest.framework in Frameworks */,
+				F70F7C551E58607B00B691DE /* Quick.framework in Frameworks */,
+				F70F7C561E58607B00B691DE /* Nimble.framework in Frameworks */,
 				F729CDCC1E51E32100AF5A5E /* RxSwift.framework in Frameworks */,
 				F729CDCB1E51E30300AF5A5E /* ObjectMapper.framework in Frameworks */,
 			);
@@ -131,6 +135,8 @@
 		F71D8A0B1E4F298D000FB21E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F70F7C531E58607B00B691DE /* Quick.framework */,
+				F70F7C541E58607B00B691DE /* Nimble.framework */,
 				F792EB411E58104600210A60 /* RxTest.framework */,
 				F729CDC61E51978D00AF5A5E /* Fuzi.framework */,
 				F76E85A51E509B22001D04DB /* ObjectMapper.framework */,
@@ -377,9 +383,10 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 			);
 			outputPaths = (
 			);
