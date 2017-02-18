@@ -22,7 +22,6 @@ struct RouteSearchRequestParameters: Mappable {
         return ["in":origin,"out":destination]
     }
 }
-
 struct BusStopSearchRequestParameters: Mappable {
     var name:String = ""
     

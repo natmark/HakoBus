@@ -26,6 +26,9 @@
 		F76E85A11E508996001D04DB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85A01E508996001D04DB /* Router.swift */; };
 		F76E85A41E508F67001D04DB /* RequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76E85A31E508F67001D04DB /* RequestParameters.swift */; };
 		F76E85A61E509B22001D04DB /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76E85A51E509B22001D04DB /* ObjectMapper.framework */; };
+		F792EB3C1E57F27400210A60 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EB3B1E57F27400210A60 /* Holiday.swift */; };
+		F792EB3E1E57F9AB00210A60 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F792EB3D1E57F9AB00210A60 /* Date.swift */; };
+		F792EB421E58104600210A60 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F792EB411E58104600210A60 /* RxTest.framework */; };
 		F7C2A0621E4D38D1000CD154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */; };
 		F7C2A0641E4D38D1000CD154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2A0631E4D38D1000CD154 /* ViewController.swift */; };
 		F7C2A0671E4D38D1000CD154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C2A0651E4D38D1000CD154 /* Main.storyboard */; };
@@ -72,6 +75,9 @@
 		F76E85A01E508996001D04DB /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		F76E85A31E508F67001D04DB /* RequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestParameters.swift; sourceTree = "<group>"; };
 		F76E85A51E509B22001D04DB /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		F792EB3B1E57F27400210A60 /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Holiday.swift; path = HakoBusTests/Holiday.swift; sourceTree = SOURCE_ROOT; };
+		F792EB3D1E57F9AB00210A60 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = HakoBusTests/Date.swift; sourceTree = SOURCE_ROOT; };
+		F792EB411E58104600210A60 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		F7C2A05E1E4D38D1000CD154 /* HakoBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HakoBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C2A0611E4D38D1000CD154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C2A0631E4D38D1000CD154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F792EB421E58104600210A60 /* RxTest.framework in Frameworks */,
 				F729CDCC1E51E32100AF5A5E /* RxSwift.framework in Frameworks */,
 				F729CDCB1E51E30300AF5A5E /* ObjectMapper.framework in Frameworks */,
 			);
@@ -124,6 +131,7 @@
 		F71D8A0B1E4F298D000FB21E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F792EB411E58104600210A60 /* RxTest.framework */,
 				F729CDC61E51978D00AF5A5E /* Fuzi.framework */,
 				F76E85A51E509B22001D04DB /* ObjectMapper.framework */,
 				F76E859C1E50759C001D04DB /* Alamofire.framework */,
@@ -193,6 +201,8 @@
 				F729CDCD1E51E54100AF5A5E /* LocationTests.swift */,
 				F729CDCF1E51E5D100AF5A5E /* BusStopTests.swift */,
 				F729CDD11E51E5DD00AF5A5E /* RouteTests.swift */,
+				F792EB3B1E57F27400210A60 /* Holiday.swift */,
+				F792EB3D1E57F9AB00210A60 /* Date.swift */,
 				F7C2A07B1E4D38D1000CD154 /* Info.plist */,
 			);
 			path = HakoBusTests;
@@ -235,6 +245,7 @@
 				F7C2A0711E4D38D1000CD154 /* Sources */,
 				F7C2A0721E4D38D1000CD154 /* Frameworks */,
 				F7C2A0731E4D38D1000CD154 /* Resources */,
+				F792EB431E5810A400210A60 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -360,6 +371,22 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		F792EB431E5810A400210A60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -386,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F729CDCE1E51E54100AF5A5E /* LocationTests.swift in Sources */,
+				F792EB3E1E57F9AB00210A60 /* Date.swift in Sources */,
+				F792EB3C1E57F27400210A60 /* Holiday.swift in Sources */,
 				F729CDD21E51E5DD00AF5A5E /* RouteTests.swift in Sources */,
 				F729CDD01E51E5D100AF5A5E /* BusStopTests.swift in Sources */,
 				F7C2A07A1E4D38D1000CD154 /* HakoBusTests.swift in Sources */,

@@ -15,10 +15,13 @@ extension Router {
     enum Route: URLRequestConvertible {
         
         case isExist(RouteSearchRequestParameters)
+        case isOutOfService(RouteSearchRequestParameters)
         
         var method: Alamofire.HTTPMethod {
             switch self {
             case .isExist:
+                return .get
+            case .isOutOfService:
                 return .get
             }
         }
@@ -26,6 +29,8 @@ extension Router {
         var path: String {
             switch self {
             case .isExist(_):
+                return "result.php"
+            case .isOutOfService(_):
                 return "result.php"
             }
         }
@@ -37,6 +42,8 @@ extension Router {
             
             switch self {
             case .isExist(let params):
+                return try Alamofire.URLEncoding.default.encode(request as URLRequestConvertible, with:params.APIParams)
+            case .isOutOfService(let params):
                 return try Alamofire.URLEncoding.default.encode(request as URLRequestConvertible, with:params.APIParams)
             }
         }
@@ -61,5 +68,21 @@ extension API {
                 }
                 .observeOn(MainScheduler.instance)
         }
+        /// 2点間を結ぶ路線が営業時間外かどうかを確認
+        /// - parameter　searchParams: RouteSearchParams
+        /// - returns: 営業時間外であればtrue
+        static func isOutOfService(searchParams:RouteSearchRequestParameters) -> Observable<Bool> {
+            return API.manager.rx.request(urlRequest: Router.Route.isOutOfService(searchParams))
+                .flatMap {
+                    $0
+                        .validate(statusCode: 200 ..< 300)
+                        .rx.responseString(encoding: String.Encoding.shiftJIS)
+                        .flatMap { (res,html) -> Observable<Bool> in
+                            return Observable.just(html.contains("本日の運行は終了しました。"))
+                    }
+                }
+                .observeOn(MainScheduler.instance)
+        }
+
     }
 }
