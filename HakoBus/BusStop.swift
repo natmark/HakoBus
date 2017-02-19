@@ -68,6 +68,11 @@ extension API {
                             let doc = HTML(html: html, encoding: String.Encoding.utf8)
                             
                             var results = [BusStopSearchResultParameters]()
+                            
+                            if html.contains("検索文字列を入力して検索しなおしてください。") {
+                                return Observable.from(results)
+                            }
+
                             for node in (doc?.css("select, in").first?.css("option"))! {
                                 var busStopSearchResultParameters = Mapper<BusStopSearchResultParameters>().map(JSONString: "{}")
                                 busStopSearchResultParameters?.name = node.innerHTML!
