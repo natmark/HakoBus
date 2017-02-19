@@ -56,6 +56,10 @@ extension Router {
 extension API {
     /// バス停検索用クラス
     class BusStop {
+        /// バス停名を指定してバス停検索
+        /// - parameter　searchParams: RouteSearchRequestParameters
+        /// - returns: BusStopSearchResultParameters
+        
         static func search(searchParams:BusStopSearchRequestParameters) -> Observable<BusStopSearchResultParameters> {
             
             // パラメータをShift-JISでエンコーディングする必要がある
