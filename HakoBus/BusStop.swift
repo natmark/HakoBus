@@ -46,7 +46,7 @@ extension Router {
         struct BusStopSearchEncoding: ParameterEncoding {
             func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
                 var request = try! URLEncoding().encode(urlRequest, with: parameters)
-                let urlString = "\((urlRequest.urlRequest?.url?.absoluteString)!)?stopname_f=\(((parameters?.first?.value)! as! String).sjisPercentEncoded)&stopname_t="
+                let urlString = "\((urlRequest.urlRequest?.url?.absoluteString)!)?stopname_f=\(((parameters?.first?.value)! as! String).sjisPercentEncoded)&stopname_t=%82%A0"
                 request.url = URL(string: urlString)
                 return request
             }
@@ -72,7 +72,6 @@ extension API {
                             let doc = HTML(html: html, encoding: String.Encoding.utf8)
                             
                             var results = [BusStopSearchResultParameters]()
-                            
                             if html.contains("検索文字列を入力して検索しなおしてください。") {
                                 return Observable.from(results)
                             }
@@ -83,7 +82,7 @@ extension API {
                                 busStopSearchResultParameters?.id = Int(node["value"]!)!
                                results.append(busStopSearchResultParameters!)
                             }
-                            
+
                             return Observable.from(results)
                     }
                 }
