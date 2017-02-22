@@ -101,7 +101,7 @@ extension API {
         }
         /// 乗り場・降り場を指定してルート検索
         /// - parameter　searchParams: RouteSearchRequestParameters
-        /// - returns: 営業時間外であればtrue
+        /// - returns: RouteSearchResultParameters
         static func search(searchParams:RouteSearchRequestParameters) -> Observable<RouteSearchResultParameters> {
             return API.manager.rx.request(urlRequest: Router.Route.search(searchParams))
                 .flatMap {
@@ -146,8 +146,8 @@ extension API {
                 .observeOn(MainScheduler.instance)
         }
         /// URLを指定して各地点の到着時刻を取得
-        /// - parameter　searchParams: RouteSearchParams
-        /// - returns: 営業時間外であればtrue
+        /// - parameter　schedule_url: 到着時間一覧URL
+        /// - returns: ArrivedScheduleResultParameters
         static func getArrivedSchedule(schedule_url:String) -> Observable<ArrivedScheduleResultParameters> {
             return API.manager.rx.request(urlRequest: Router.Route.getArrivedSchedule(schedule_url))
                 .flatMap {
